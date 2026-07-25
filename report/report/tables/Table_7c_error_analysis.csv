@@ -1,6 +1,0 @@
-Error pattern,Count,% of errors,Mean confidence
-Normal -> Pleural Pathology,6,37.5%,0.274
-Cardiac Pathology -> Pleural Pathology,4,25.0%,0.300
-Tuberculosis (TB) -> Pleural Pathology,4,25.0%,0.273
-Chronic Lung Disease -> Pleural Pathology,2,12.5%,0.265
-Total errors,16,100%,0.279
