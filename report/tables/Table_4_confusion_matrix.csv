@@ -1,0 +1,8 @@
+True \ Predicted,Cardiac Pathology,Chronic Lung Disease,Normal,Pleural Pathology,Tuberculosis (TB),Total,Recall
+Cardiac Pathology,0,0,0,4,0,4,0.000
+Chronic Lung Disease,0,0,0,2,0,2,0.000
+Normal,0,0,0,6,0,6,0.000
+Pleural Pathology,0,0,0,2,0,2,1.000
+Tuberculosis (TB),0,0,0,4,0,4,0.000
+Total predicted,0,0,0,18,0,18,-
+Precision,n/a,n/a,n/a,0.111,n/a,-,0.111 (accuracy)

@@ -1,0 +1,18 @@
+> ## NOT REPORTABLE
+>
+> These numbers come from **synthetic phantom images, not chest X-rays** and **reduced budgets** (epochs=8, cv_epochs=8, bootstrap B=300). They demonstrate that the pipeline executes end to end; they are **not findings** and must not be cited. Re-run on the real dataset at full budget to populate these tables.
+>
+> Source: `/home/user/Superpixel-GATv2-HybridCNN-CXR/demo_data` (81 images) - device cpu - commit `08d4c8a`
+
+**Table 1. Split configurations, aggregate performance (mean +/- SD over 2 seeds) and bootstrapped 95% CIs.**
+
+| Config | Ratio (Tr/Va/Te) | n (Tr/Va/Te) | Accuracy | Bal. Acc. | Macro F1 | Macro AUC | Accuracy 95% CI | Macro F1 95% CI | Macro AUC 95% CI | MCC 95% CI |
+|---|---|---|---|---|---|---|---|---|---|---|
+| S1 | 80%/10%/10% | 63 / 9 / 9 | 0.1111 +/- 0.0000 | 0.2000 +/- 0.0000 | 0.0400 +/- 0.0000 | 0.7683 +/- 0.0063 | 0.111 (0.000-0.278) | 0.040 (0.000-0.093) | 0.735 (0.548-0.855) | 0.000 (0.000-0.000) |
+| S2 | 70%/15%/15% | 57 / 12 / 12 | 0.0833 +/- 0.0000 | 0.2000 +/- 0.0000 | 0.0308 +/- 0.0000 | 0.8477 +/- 0.0181 | 0.083 (0.000-0.208) | 0.031 (0.000-0.070) | 0.759 (0.610-0.871) | 0.000 (0.000-0.000) |
+| S3 | 75%/15%/10% | 60 / 12 / 9 | 0.1111 +/- 0.0000 | 0.2000 +/- 0.0000 | 0.0400 +/- 0.0000 | 0.7825 +/- 0.0254 | 0.111 (0.000-0.278) | 0.040 (0.000-0.093) | 0.724 (0.535-0.853) | 0.000 (0.000-0.000) |
+| S4 | 70%/20%/10% | 57 / 15 / 9 | 0.1111 +/- 0.0000 | 0.2000 +/- 0.0000 | 0.0400 +/- 0.0000 | 0.8413 +/- 0.0016 | 0.111 (0.000-0.278) | 0.040 (0.000-0.093) | 0.756 (0.561-0.888) | 0.000 (0.000-0.000) |
+| S5 | 60%/20%/20% | 51 / 15 / 15 | 0.0667 +/- 0.0000 | 0.2000 +/- 0.0000 | 0.0250 +/- 0.0000 | 0.8313 +/- 0.0542 | 0.067 (0.000-0.167) | 0.025 (0.000-0.059) | 0.693 (0.548-0.825) | 0.000 (0.000-0.000) |
+| **Mean** | - | 81 total | 0.0967 +/- 0.0185 | 0.2000 +/- 0.0000 | 0.0352 +/- 0.0062 | 0.8142 +/- 0.0324 | - | - | - | - |
+
+All splits are stratified by class and performed on raw images before augmentation (no image-level leakage). Seeds 42-43. Best configuration by mean accuracy: **S1**; bootstrap B = 300.
